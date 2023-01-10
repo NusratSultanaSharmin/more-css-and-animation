@@ -8,9 +8,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom</title>
     <style>
+        :root{
+            --primary-color:purple;
+            --secondary-color:red ;
+            --single-border:yellow;
+            --third-color:green;
+        }
           h1{
-            color: steelblue;
-            color: slateblue;
+            color:var(--primary-color);
+
+            /* color: slateblue; */
+          }
+          #heading-3{
+            border:2px solid var(--primary-color);
+          }
+          p{
+            border-bottom:5px solid var(--primary-color);
+
+
+          }
+          .box{
+            border:2px solid var(--single-border);
+            width:calc(100% -60px);
+            height:100px;
+            background-color:lightblue;
+
+
+          }
+
+          .secondary-color{
+            border:2px solid var(--secondary-color);
+            font-size: 30px;
+            /* color:blue; */
+            color: var(--third-color);
           }
     </style>
 
@@ -18,10 +48,34 @@
 <body>
    <!-- h1*4{My strong heading-$}  -->
 
-   <h1>My strong heading-1</h1>
+   <!-- <h1>My strong heading-1</h1>
    <h1>My strong heading-2</h1>
    <h1>My strong heading-3</h1>
-   <h1>My strong heading-4</h1> 
+   <h1>My strong heading-4</h1>  -->
+
+   <!-- h1.heading#heading-$*4{My strong heading-$} -->
+
+   <h1 class="heading" id="heading-1">My strong heading-1</h1>
+   <h1 class="heading" id="heading-2">My strong heading-2</h1>
+   <h1 class="heading" id="heading-3">My strong heading-3</h1>
+   <h1 class="heading" id="heading-4">My strong heading-4</h1>
+
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, ipsa!</p>
+
+
+   <div class="box"></div>
+   <div class="box"></div>
+
+   <hr>
+
+    <div class="secondary-color">My strong heading</div>
+    <div class="secondary-color">My strong heading</div>
+    <div class="secondary-color">My strong heading</div>
+    <div class="secondary-color">My strong heading</div>
+    <div class="secondary-color">My strong heading</div>
+ 
+
+
 
 </body>
 </html>
